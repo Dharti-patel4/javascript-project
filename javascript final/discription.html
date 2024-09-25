@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description Page</title>
+    <link rel="stylesheet" href="cart.html">
+    
+</head>
+
+<body>
+    <div class="container" style="text-align: center;">
+        <img id="image" src=""alt="Product Image" style="height: 200px; width: 220px;">
+        <h1 id="title">HoloKitab</h1>
+        <div class="data">
+            <span><label>Price: <p id="price">$45</p></label>
+            </span>
+        </div>
+        <div style="display:flex;justify-content: center;">
+            <button id="Addtocart"style="border: 1ps solid white;background-color: black;color: teal;padding:5px;cursor: pointer;">ADD TO Cart</button>
+        </div>
+    </div>
+
+
+
+</body>
+
+<script>
+     const param = new URLSearchParams(window.location.search)
+    window.addEventListener("load", () => {
+        document.getElementById("image").src = param.get("image")
+        document.getElementById("title").innerText = param.get("title")
+        document.getElementById("price").innerText = param.get("price")
+        // document.getElementById("founder").innerText = param.get("founder")
+        // document.getElementById("category").innerText = param.get("category")
+        // document.getElementById("description").innerText = param.get("description")
+    })
+
+    Addtocart.addEventListener("click", () => {
+        // alert("added !!")
+        let cartdata={
+            image:param.get("image"),
+            title:param.get("title"),
+            price:param.get("price"),
+            // founder:param.get("founder"),
+            // category:param.get("category"),
+            // description:param.get("description"),
+        }
+        console.log(cartdata)
+
+        fetch("http://localhost:3000/cart",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(cartdata)
+        }).then((res)=>res.json())
+        .then((data)=>alert("data added to cart 👍"))
+        .catch((err)=>console.log(err))
+    
+})
+</script>
+
+</html>

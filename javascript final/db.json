@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "title": "Men's Charlie",
+      "price": "$230.00",
+      "image": "https://www.greats.com/cdn/shop/files/GREATS-Mens-Regent2.0-Blanco-02_Web.jpg?v=1718215918",
+      "id": "02a1"
+    },
+    {
+      "title": "Men's Charlie",
+      "price": "$230.00",
+      "image": "https://www.greats.com/cdn/shop/files/GREATS-Mens-Royale2.0-BlancoGum-02_Web.jpg?v=1718215995",
+      "id": "a071"
+    },
+    {
+      "title": "Men's Charlie",
+      "price": "$230.00",
+      "image": "https://www.greats.com/cdn/shop/files/GREATS-Mens-RoyaleKnit2.0-WhiteNavy-02_Web.jpg?v=1718216970",
+      "id": "ff7f"
+    },
+    {
+      "title": "Men's Charlie",
+      "price": "$230.00",
+      "image": "https://www.greats.com/cdn/shop/files/GREATS-Mens-Essex-LightGrey-02_Web.jpg?v=1710263171",
+      "id": "e152"
+    }
+  ],
+  "cart": [
+    {
+      "id": "2a31",
+      "image": "https://www.greats.com/cdn/shop/files/GREATS-Mens-Royale2.0-BlancoGum-02_Web.jpg?v=1718215995",
+      "title": "Men's Charlie",
+      "price": "$230.00"
+    },
+    {
+      "id": "2a64",
+      "image": "https://www.greats.com/cdn/shop/files/GREATS-Mens-Royale2.0-BlancoGum-02_Web.jpg?v=1718215995",
+      "title": "Men's Charlie",
+      "price": "$230.00"
+    },
+    {
+      "id": "2440",
+      "image": "https://www.greats.com/cdn/shop/files/GREATS-Mens-Regent2.0-Blanco-02_Web.jpg?v=1718215918",
+      "title": "Men's Charlie",
+      "price": "$230.00"
+    }
+  ]
+}
